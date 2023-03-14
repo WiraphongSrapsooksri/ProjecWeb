@@ -8,6 +8,11 @@ import { LoginComponent } from './page/login/login.component';
 import { MainComponent } from './customer/main/main.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from './customer/header/header.component';
+import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from "@angular/common/http";
 
 
 
@@ -16,6 +21,7 @@ import {MatMenuModule} from '@angular/material/menu';
     AppComponent,
     LoginComponent,
     MainComponent,
+    HeaderComponent,
 
   ],
   imports: [
@@ -23,7 +29,11 @@ import {MatMenuModule} from '@angular/material/menu';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
