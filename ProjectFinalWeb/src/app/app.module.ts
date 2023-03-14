@@ -13,6 +13,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './customer/header/header.component';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from "@angular/common/http";
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -33,7 +34,8 @@ import { HttpClientModule } from "@angular/common/http";
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

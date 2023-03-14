@@ -26,9 +26,20 @@
     <section class="u-black u-clearfix u-section-1" id="sec-df7c">
       <img class="u-expanded-width u-image u-image-1" src="https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg" data-image-width="1980" data-image-height="849">
     </section>
-    <div style="background-color: black;">
 
-    <div class="container"style="margin-top: -50px;">
+    <div style="background-color: black;">
+    <div class="container">
+      <mat-form-field appearance="fill" >
+        <mat-label>Favorite food</mat-label>
+        <mat-select>
+          <mat-option #tid *ngFor="let types of type" [value]="types.tid" (click)="getMenu(tid.value)">
+            {{types.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <!--  -->
       <div class="row" style="margin-bottom: 25px;" >
         <div class="col-4"  style="margin-bottom: 25px;" *ngFor="let food of this.foods">
         <mat-card class="example-card">
