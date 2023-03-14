@@ -29,15 +29,15 @@
     <div style="background-color: black;">
 
     <div class="container"style="margin-top: -50px;">
-      <div class="row" style="margin-bottom: 25px;">
-        <div class="col-4">
+      <div class="row" style="margin-bottom: 25px;" >
+        <div class="col-4"  style="margin-bottom: 25px;" *ngFor="let food of this.foods">
         <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{this.foods.name}}</mat-card-title>
-          <mat-card-subtitle>{{this.foods.price}} THB.</mat-card-subtitle>
+          <mat-card-title>{{this.food.name}}</mat-card-title>
+          <mat-card-subtitle>{{this.food.price}} THB.</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image  width="350px" height="210px" src={{this.foods.img}} alt="Photo of a Shiba Inu">
+        <img mat-card-image  width="350px" height="210px" src={{this.food.img}}>
         <mat-card-content>
         </mat-card-content>
         <mat-card-actions>
@@ -48,123 +48,10 @@
         <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
           <mat-icon>favorite</mat-icon>
         </button>
-
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div class="col-4">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>ข้าวผัด</mat-card-title>
-          <mat-card-subtitle>55 THB.</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image  src="https://s.isanook.com/wo/0/rp/rc/w670h402/yatxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3dvLzAvdWQvMzYvMTgwOTI5L2YuanBn.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button class="bt"><span class="material-symbols-outlined text">
-            shopping_cart เพิ่มลงในตะกร้า
-            </span></button>
-            <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div class="col-4">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>ขนมชั้น</mat-card-title>
-          <mat-card-subtitle>20 THB.</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image  src="https://s.isanook.com/wo/0/rp/rc/w670h402/yatxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3dvLzAvdWQvMzYvMTgwOTI5L2YuanBn.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button class="bt"><span class="material-symbols-outlined text">
-            shopping_cart เพิ่มลงในตะกร้า
-            </span></button>
-            <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-
         </mat-card-actions>
       </mat-card>
     </div>
   </div>
-  <div class="row">
-    <div class="col-4">
-    <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>ข้าวเหนียวมะม่วง</mat-card-title>
-      <mat-card-subtitle>15 THB.</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image  src="https://s.isanook.com/wo/0/rp/rc/w670h402/yatxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3dvLzAvdWQvMzYvMTgwOTI5L2YuanBn.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button class="bt"><span class="material-symbols-outlined text">
-        shopping_cart เพิ่มลงในตะกร้า
-        </span></button>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-
-    </mat-card-actions>
-  </mat-card>
-</div>
-<div class="col-4">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>โกโก้</mat-card-title>
-      <mat-card-subtitle>25 THB.</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image  src="https://s.isanook.com/wo/0/rp/rc/w670h402/yatxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3dvLzAvdWQvMzYvMTgwOTI5L2YuanBn.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button class="bt"><span class="material-symbols-outlined text">
-        shopping_cart เพิ่มลงในตะกร้า
-        </span></button>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-
-    </mat-card-actions>
-  </mat-card>
-</div>
-<div class="col-4">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>ชาเขียว</mat-card-title>
-      <mat-card-subtitle>25 THB.</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image  src="https://s.isanook.com/wo/0/rp/rc/w670h402/yatxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3dvLzAvdWQvMzYvMTgwOTI5L2YuanBn.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-    </mat-card-content>
-    <mat-card-actions>
-        <button mat-button class="bt"><span class="material-symbols-outlined text" >
-          shopping_cart เพิ่มลงในตะกร้า
-        </span> </button>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-
-    </mat-card-actions>
-  </mat-card>
-</div>
-</div>
 </div>
 </div>
 </html>

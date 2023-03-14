@@ -12,8 +12,7 @@ export class MainComponent {
   constructor(private dataService : Dataservice,private http : HttpClient){
     http.get(dataService.apiEndpoint).subscribe((data:any) =>{
       console.log(data);
-      this.foods = data[0];
-      console.log(this.foods);
+      this.foods = data;
 
     })
   }
