@@ -4,7 +4,7 @@ import { MainComponent } from './customer/main/main.component';
 import { LoginComponent } from './page/login/login.component';
 
 const routes: Routes = [
-  {path:'',component:LoginComponent}
+  {path:'',component:MainComponent}
 ];
 
 @NgModule({
