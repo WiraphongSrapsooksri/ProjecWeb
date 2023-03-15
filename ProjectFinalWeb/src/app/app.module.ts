@@ -15,7 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from "@angular/common/http";
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -36,7 +36,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatButtonModule,
     HttpClientModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

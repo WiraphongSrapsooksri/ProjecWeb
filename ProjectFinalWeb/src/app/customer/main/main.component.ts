@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Dataservice } from 'src/app/service/appdata.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { Dataservice } from 'src/app/service/appdata.service';
 export class MainComponent {
   foods : any = '';
   type : any = '';
-  constructor(private dataService : Dataservice,private http : HttpClient){
+  constructor(private dataService: Dataservice, private http: HttpClient, private dialog: MatDialog) {
     http.get(dataService.apiEndpoint + '/foods').subscribe((data: any) => {
       console.log(data);
       this.foods = data;
@@ -30,6 +31,9 @@ export class MainComponent {
     this.http.post(this.dataService.apiEndpoint+'/typees',(JSON.stringify({"type":type}))).subscribe((types:any) =>{
       this.foods = types;
     });
+  }
+  amount() {
+    console.log("amount");
   }
 
 
