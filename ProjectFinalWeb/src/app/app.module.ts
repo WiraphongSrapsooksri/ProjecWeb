@@ -15,6 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from "@angular/common/http";
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
+import { AmountComponent } from './page/amount/amount.component';
 
 
 
@@ -23,7 +24,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppComponent,
     LoginComponent,
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    AmountComponent
   ],
   imports: [
     BrowserModule,
