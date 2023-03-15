@@ -17,7 +17,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AmountComponent } from './page/amount/amount.component';
 
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { AmountComponent } from './page/amount/amount.component';
     MatButtonModule,
     HttpClientModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

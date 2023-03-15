@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { AmountComponent } from 'src/app/page/amount/amount.component';
 import { Dataservice } from 'src/app/service/appdata.service';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-main',
@@ -10,6 +12,7 @@ import { Dataservice } from 'src/app/service/appdata.service';
 export class MainComponent {
   foods : any = '';
   type : any = '';
+  dialog: any;
   constructor(private dataService : Dataservice,private http : HttpClient){
     http.get(dataService.apiEndpoint + '/foods').subscribe((data: any) => {
       console.log(data);
@@ -31,6 +34,10 @@ export class MainComponent {
       this.foods = types;
     });
   }
-
-
+  amount() {
+    this.dataService.FoodServic = this.foods;
+    this.dialog.open(AmountComponent, {
+      minWidth: '300px',
+    })
+  }
 }

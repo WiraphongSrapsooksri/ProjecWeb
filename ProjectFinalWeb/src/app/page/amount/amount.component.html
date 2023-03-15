@@ -1,1 +1,13 @@
-<p>amount works!</p>
+<div style="display: flex;flex-direction: column;height: 400px;width: 500px;margin: 20px;">
+  <p>เลือกจำนวนสินค้า</p>
+
+  <div class="wrapper">
+    <button class="plusminus" (click)="handlePlus()">-</button>
+    <input type="number" class="num"  value="0"[(ngModel)]="value"/>
+    <button class="plusminus" (click)="handlePlus()">+</button>
+  </div>
+
+  <button (click)="save(food.fid,value">บันทึกข้อมูล</button>
+  <button (click)="close()">Close</button>
+
+</div>
