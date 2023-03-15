@@ -20,10 +20,18 @@ export class MainComponent {
     });
 
   }
+  allMenu(){
+    this.http.get(this.dataService.apiEndpoint+'/foods').subscribe((data:any) =>{
+      console.log(data);
+      this.foods = data;
+    });
+  }
+
   getMenu(type : string){
     this.http.post(this.dataService.apiEndpoint+'/typees',(JSON.stringify({"type":type}))).subscribe((types:any) =>{
       this.foods = types;
     });
   }
+
 
 }
