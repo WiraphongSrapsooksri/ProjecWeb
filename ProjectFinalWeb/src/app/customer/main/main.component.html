@@ -23,13 +23,13 @@
 
 
 <!-- รูปพื้นหลังที่ 1 -->
-    <section class="u-black u-clearfix u-section-1" id="sec-df7c">
+    <!-- <section class="u-black u-clearfix u-section-1" id="sec-df7c">
       <img class="u-expanded-width u-image u-image-1" src="https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg" data-image-width="1980" data-image-height="849">
-    </section>
+    </section> -->
 
 
 <!--รูปพื้นหลังที่ 2-->
-    <div style="background-color: black;">
+    <div style="background-color: rgba(255, 255, 255, 0.829);margin-top: 20px;">
     <div class="container">
       <mat-form-field appearance="fill" >
         <mat-label class="txtmenu">ประเภทอาหาร</mat-label>
@@ -45,16 +45,16 @@
       <!--  -->
       <div class="row" style="margin-bottom: 25px;" >
         <div class="col-4"  style="margin-bottom: 25px;" *ngFor="let food of this.foods">
-          <mat-card class="example-card">
+          <mat-card class="example-card" style="background-color: rgba(228, 228, 228, 0.815);">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
                  <mat-card-title class="txtmenu">{{this.food.name}}</mat-card-title>
                     <mat-card-subtitle class="txtdes">{{this.food.price}} THB.</mat-card-subtitle>
             </mat-card-header>
-                  <img mat-card-image  width="350px" height="210px" src={{this.food.img}}>
+                  <img mat-card-image width="350px" height="250px" src={{this.food.img}}>
           <mat-card-actions>
           <button mat-button class="bt"><span class="material-symbols-outlined text">
-              shopping_cart เพิ่มลงในตะกร้า</span>
+              shopping_cart </span>
           </button>
           <span class="example-spacer"></span>
         <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
