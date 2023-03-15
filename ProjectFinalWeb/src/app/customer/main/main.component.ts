@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { AmountComponent } from 'src/app/page/amount/amount.component';
 import { Dataservice } from 'src/app/service/appdata.service';
 
 @Component({
@@ -32,9 +33,12 @@ export class MainComponent {
       this.foods = types;
     });
   }
-  amount() {
+  amount(foods: string) {
     console.log("amount");
+    console.log(foods);
+    this.dataService.FoodServic = foods;
+    this.dialog.open(AmountComponent, {
+      maxWidth: '300px'
+    })
   }
-
-
 }

@@ -5,5 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class Dataservice {
   apiEndpoint = 'http://localhost:9999/webAPI_ProjectWebFinal';
+  FoodServic :any;
   constructor() { }
 }

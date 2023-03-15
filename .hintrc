@@ -31,6 +31,15 @@
       {
         "image-alt": "off"
       }
-    ]
+    ],
+    "button-type": "off",
+    "meta-charset-utf-8": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "typescript-config/consistent-casing": "off"
   }
 }

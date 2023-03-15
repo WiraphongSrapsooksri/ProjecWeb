@@ -1,0 +1,18 @@
+<mat-card style="width: 300px; height: 200px;">
+  <mat-card-header>
+    <mat-card-title>เลือกจำนวนที่ต้องการ</mat-card-title>
+    <mat-card-subtitle>
+      {{foodOj.name}} <br> {{foodOj.price}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions align="end">
+    <div class="wrapper">
+      <button class="plusminus" (click)="handleMinus()">-</button>
+      <input type="number" class="num" value="0" #amount [(ngModel)]="amount" />
+
+      <button class="plusminus" (click)="handlePlus()">+</button>
+    </div>
+    <button mat-button (click)="confirm(foodOj.fid,amount.value)">confirm</button>
+    <button mat-button>Cancle</button>
+  </mat-card-actions>
+</mat-card>

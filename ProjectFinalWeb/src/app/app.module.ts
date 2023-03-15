@@ -16,14 +16,16 @@ import { HttpClientModule } from "@angular/common/http";
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
-
+import { AmountComponent } from './page/amount/amount.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    AmountComponent
+
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { MatListModule } from '@angular/material/list';
     HttpClientModule,
     MatSelectModule,
     MatDialogModule,
-    MatListModule
+    MatListModule,
+    AmountComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

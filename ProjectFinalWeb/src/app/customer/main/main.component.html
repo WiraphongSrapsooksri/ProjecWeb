@@ -4,7 +4,7 @@
 
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8"> -->
     <meta name="keywords" content="​John&amp;apos;s Pizzeria, Italy Pizza Menu, ​Appetizers, Heroes, Great Pizza, Pizza, ​Specialty  Piz​​​za, Our Story">
     <meta name="description" content="">
     <title>Page 1</title>
@@ -53,7 +53,7 @@
             </mat-card-header>
                   <img mat-card-image width="350px" height="250px" src={{this.food.img}}>
           <mat-card-actions>
-          <button mat-button class="bt" (click)="amount()  > <span class="material-symbols-outlined text" >
+          <button mat-button class="bt" (click)="amount(this.food)"> <span class="material-symbols-outlined text" >
               shopping_cart </span>
           </button>
           <span class="example-spacer"></span>
