@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
 import { Dataservice } from 'src/app/service/appdata.service';
 
 @Component({
@@ -12,7 +11,7 @@ export class MainComponent {
   foods : any = '';
   type : any = '';
   constructor(private dataService : Dataservice,private http : HttpClient){
-    http.get(dataService.apiEndpoint+'/foods').subscribe((data:any) =>{
+    http.get(dataService.apiEndpoint+'/food').subscribe((data:any) =>{
       console.log(data);
       this.foods = data;
     });
@@ -22,7 +21,7 @@ export class MainComponent {
 
   }
   allMenu(){
-    this.http.get(this.dataService.apiEndpoint+'/foods').subscribe((data:any) =>{
+    this.http.get(this.dataService.apiEndpoint+'/food').subscribe((data:any) =>{
       console.log(data);
       this.foods = data;
     });
