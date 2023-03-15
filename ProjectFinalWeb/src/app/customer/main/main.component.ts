@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 import { Dataservice } from 'src/app/service/appdata.service';
 
 @Component({
@@ -26,7 +27,6 @@ export class MainComponent {
       this.foods = data;
     });
   }
-
   getMenu(type : string){
     this.http.post(this.dataService.apiEndpoint+'/typees',(JSON.stringify({"type":type}))).subscribe((types:any) =>{
       this.foods = types;
