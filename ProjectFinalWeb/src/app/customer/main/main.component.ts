@@ -21,7 +21,7 @@ export class MainComponent {
 
   }
   allMenu(){
-    this.http.get(this.dataService.apiEndpoint+'/food').subscribe((data:any) =>{
+    this.http.get(this.dataService.apiEndpoint+'/foods').subscribe((data:any) =>{
       console.log(data);
       this.foods = data;
     });
