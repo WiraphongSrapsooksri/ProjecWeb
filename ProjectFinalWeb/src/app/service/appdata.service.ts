@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Dataservice {
-  apiEndpoint = 'http://localhost:9999/webAPI_ProjectWebFinal';
+  apiEndpoint = 'http://localhost/work02';
   constructor() { }
 }
