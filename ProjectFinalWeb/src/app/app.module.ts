@@ -14,6 +14,7 @@ import { HeaderComponent } from './customer/header/header.component';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from "@angular/common/http";
 import {MatSelectModule} from '@angular/material/select';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -34,7 +35,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatIconModule,
     MatButtonModule,
     HttpClientModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
